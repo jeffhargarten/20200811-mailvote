@@ -94,7 +94,7 @@ class Map {
             }
           }
           if (votes > 0.25) { color = "#ffffff"; }
-          tooltip.html("<div class='countyName'>" + d.properties.COUNTYNAME + "</div><div><span class='legendary' style='color:" + color + "; background-color:" + self.colorScale(votes) + ";'>" + d3.format(".0%")(votes) + "</span> absentee votes</div>");
+          tooltip.html("<div class='countyName'>" + d.properties.COUNTYNAME + "</div><div><span class='legendary' style='color:" + color + "; background-color:" + self.colorScale(votes) + ";'>" + d3.format(".0%")(votes) + "</span> absentee/mail votes</div>");
           $(".d3-tooltip").show();
           tooltip.show();
       })
