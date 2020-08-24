@@ -1,0 +1,98 @@
+label,content
+content," <div class=""strib-styles ssa ssb ssc"">
+  <section class=""container-lg elex-header"">
+    <h5 class=""font-popular-light""><span class=""font-popular-medium"">Election 2020</span></h5>
+    <h1>How many Minneasota primary voters sent mail ballots?</h1>
+  <div class=""byline"">
+    <address>By
+      <a rel=""author"" href=""http://www.startribune.com/jeff-hargarten/274254381/"">Jeff Hargarten</a>
+    </address>
+    <span class=""spacer""></span>
+    Star Tribune
+    <span class=""spacer-alt""></span>
+    <time pubdate datetime=""2019-11-11T16:00:00"">August 9, 2020</time>
+  </div>
+  <p></p>
+  <!-- share -->
+</section>
+  <section class=""container-lg leadin"">
+     <p>Minnesotans requested tenfold more absentee ballots in this primary than 2018, and 21 times 2016's volume.</p>
+
+    <p>How elections are conducted in the COVID-19 era is fundamentally altered, resulting in surges of early and mail-in balloting.</p>
+
+    <p>Early voting in Minnesota's primaries may indicate the outsized impact absentee balloting may have on November's general election.</p>
+  </section>
+
+      <section class=""body"">
+        <h1 class=""chartTitle odometer purple"">0</h1>
+        <p>early mail-in votes</p>
+      </section>
+
+      <div class=""slide"">
+        <div class=""chartTitle"">545,829 requested mail ballots as of July 31</div>
+        <div class=""chart"">
+          <div class=""bar"">
+            <div class=""purple3 mainbar"" style=""width:45%""><div>returned<br>45%</div></div><div class=""gray2 mainbar"" style=""width:54%""><div>outstanding<br>54%</div></div>
+            </div>
+        </div>
+
+        <div class=""chartTitle"">portion of total primary vote</div>
+        <div class=""chart"">
+          <div class=""bar"">
+            <div class=""purple3 mainbar"" style=""width:45%""><div>returned<br>45%</div></div><div class=""gray2 mainbar"" style=""width:54%""><div>outstanding<br>54%</div></div>
+            </div>
+        </div>
+
+        <p> </p>
+
+        <div class=""chartTitle"">Where mail ballots came from</div>
+
+        <div id=""mapCounties"" class=""map""><svg width=""320"" height=""350"" viewbox=""0 0 500 550"" preserveaspectratio=""xMidYMid""></svg></div>
+        <p> </p>
+      </div>
+
+      <section class=""container-lg leadin"">
+        <p> </p>
+      </section>
+
+      <div class=""slide"">
+        <div class=""chartTitle"">Absentee votes in prior elections</div>
+
+        <div class=""chart"">
+          <div class=""label"">2020 primary</div>
+          <div class=""bar"">
+            <div class=""purple3 mainbar"" style=""width:32%""><div><br>545,829</div></div>
+          </div>
+          
+          <div class=""label"">2018 primary</div>
+          <div class=""bar"">
+            <div class=""purple3 mainbar"" style=""width:9%""><div><br>54,264</div></div>
+          </div>
+          
+          <div class=""label"">2016 primary</div>
+          <div class=""bar"">
+            <div class=""purple3 mainbar"" style=""width:4%""><div><br>25,930</div></div>
+          </div>
+        </div>
+      </div>
+
+      <section class=""container-lg leadin"">
+        <p> </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+<section class=""container-lg"">
+    <div class=""article-author-contact"">
+        <div class=""article-author-hcard"">
+                <p></p><p><span style=""font-size: 10pt; font-family: Arial;""><strong>Jeff Hargarten </strong>is a data journalist for the Star Tribune focusing on data-driven reporting and visualization. He has covered elections, technology, criminal justice, demographics and public health.</span></p><p></p>
+                <p><a class=""article-author-hcard__email"" target=""_blank"" href=""mailto:Jeff.Hargarten@startribune.com?subject=How CD5's money race is shaping up before the primary"" data-linkname=""Jeff.Hargarten@startribune.com"" data-linktype=""email"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">Jeff.Hargarten@startribune.com</a>
+                <a class=""article-author-hcard__phone"" href=""tel:612-673-4642"" data-linkname=""612-673-4642"" data-linktype=""phone"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">612-673-4642</a>
+                <a class=""article-author-hcard__twitter"" href=""http://twitter.com/JeffHargarten"" target=""_blank"" data-linkname=""JeffHargarten"" data-linktype=""twitter"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">JeffHargarten</a></p>
+        </div>
+      </div>
+</section>
+</div>"
+scripts,news/projects/all/20200811-mailvote/js/index.bundle.js
+styles,news/projects/all/20200811-mailvote/styles/index.bundle.css
+script libraries,"<script src=""https://cdn.polyfill.io/v2/polyfill.min.js""></script>"
+style libraries,

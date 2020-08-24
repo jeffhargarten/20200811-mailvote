@@ -1,0 +1,355 @@
+/**
+ * Main style file for project.
+ * Uses SASS, specifically the SCSS syntax
+ * http://sass-lang.com/
+ */
+
+
+// Include strib-icons
+$strib-fonts-location: '//static.startribune.com/assets/libs/strib-icons/0.0.10/';
+@import '@striblab/strib-icons/build/strib-icons.scss';
+
+
+// Environment noting
+@import "shared/_environment";
+
+// Strib styles
+// https://github.com/striblab/strib-styles/blob/master/source/styles/_variables.scss
+
+// Assumed that this project lives within an existing page, so we add a
+// wrapper that is very specific and wrap our other styles in it so
+// that we don't affect other styles on the page.  Note that
+// this increases the CSS size, and it means strib-styles won't use
+// rems when it would otherwise.
+$selector-wrapper: '.strib-styles.ssa.ssb.ssc';
+@import '@striblab/strib-styles/source/styles/default-wrapper.scss';
+
+// Project specific styles.  Split styles into files per component
+#{$selector-wrapper} {
+  // Split your styles into multiple files so its easier to understand and change
+  @import 'shared/_project';
+}
+
+body {
+  overflow-x:hidden !important;
+}
+
+.adjacent {
+  display:inline-block;
+  width:100% !important;
+}
+
+.elexLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px  !important;
+  margin-top: 50px  !important;
+}
+
+.elexLogo img {
+  width: 50px;
+}
+
+.elexLogo .text {
+  font-family: "Benton Sans", sans-serif !important;
+  margin-right: 5px;
+}
+
+.elexLogo h3 {
+  font-family: "Popular", sans-serif !important;
+  margin-bottom: 0 !important;
+  margin-top: 10px !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
+
+.center {
+  text-align:center !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+.purple_alt {
+  color: #8b62a8;
+}
+
+.purple {
+  color: #7D739C;
+}
+
+/*PURPLE SHADED RAMP*/
+.purple5 {
+  fill: #4A4061;
+  background-color: #4A4061;
+  color: #ffffff;
+}
+
+.purple4 {
+  fill: #62597D;
+  background-color: #62597D;
+  color: #ffffff;
+}
+
+.purple3 {
+  fill: #7D739C;
+  background-color: #7D739C;
+  color: #ffffff;
+}
+
+.purple2 {
+  fill: #B6AED4;
+  background-color: #B6AED4;
+  color: #ffffff;
+}
+
+.purple1 {
+  fill: #D9D3EB;
+  background-color: #D9D3EB;
+}
+
+.body {
+  text-align:center;
+}
+
+.label {
+  font-weight:bold;
+  font-size:0.9em;
+}
+
+.bar {
+  height:50px;
+  margin-bottom:10px;
+  font-size:1.1em;
+}
+
+.bar div {
+  display:inline-block;
+  height:50px;
+  color:#ffffff;
+  font-size:0.9em;
+  font-weight:bold;
+  text-align:right;
+  padding-right:2px;
+}
+
+.legend {
+  font-size:0.6em;
+  margin-bottom:15px;
+}
+
+#mainlegend {
+  margin-top:25px;
+  margin-bottom:15px;
+  font-size:0.8em;
+}
+
+.legend div {
+  height:10px;
+  width:40px;
+  display:inline-block;
+}
+
+.null {
+  background-color:#f7f7f7;
+}
+
+.label {
+  font-weight:bold;
+  font-size:0.8em;
+  }
+
+  /*GREEN SHADED RAMP*/
+  .green1 {
+    fill: #C7E5B5;
+    background-color: #C7E5B5;
+  }
+  
+  .green2 {
+    fill: #9EE384;
+    background-color: #9EE384;
+  }
+  
+  .green3 {
+    fill: #5BBF48;
+    background-color: #5BBF48;
+  }
+  
+  .green4 {
+    fill: #299E3D;
+    background-color: #299E3D;
+  }
+  
+  .green5 {
+    fill: #118241;
+    background-color: #118241;
+  }
+
+  .d3-tooltip, #d3-tooltip-0, .thisTip, .tooltip {
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+    background-color: #ffffff !important;
+    height: auto !important;
+    width: auto !important;
+    color:#000000 !important;
+    padding: 10px !important;
+    opacity:1 !important;
+    border-radius: 0 !important;
+    border: 1px solid #000000 !important;
+    font-size: 13px !important;
+    display:none;
+  }
+
+  .legendary {
+    padding:4px;
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-weight:bold;
+    border-radius: 5px;
+    padding: 0 7px;
+    margin-bottom: 3px;
+  }
+
+  .county:hover {
+    opacity:0.7;
+  }
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
+  display: block;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute;
+}
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+}
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  line-height: 1em !important;
+}
+.odometer.odometer-auto-theme .odometer-value, .odometer.odometer-theme-default .odometer-value {
+  text-align: center;
+}
+.odometer, .odometer-inside, .odometer-digit {
+  max-height: 80px !important;
+  line-height:1em !important;
+  vertical-align:top;
+  margin-top:-15px;
+
+  @media (min-width:1200px) {
+    max-height: 80px !important;
+  }
+
+  @media (max-width:1000px) {
+    max-height: 80px !important;
+  }
+}
+
+@media (max-width:1000px) {
+  .odometer, .odometer-inside, .odometer-digit {
+    margin-top:-8.5px;
+  }
+}
+
+.odometer {
+  font-size:4em !important;
+}
+
+    
+@media (max-width:800px) {
+  #wrapper {
+      width:100%;
+  }
+
+.ind {
+    width:19%;
+}
+
+
+.gop {
+    width:37%;
+}
+
+.dfl {  
+    width:23%;
+}
+
+.slide {
+  width:100% !important;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+}
