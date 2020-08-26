@@ -1,6 +1,6 @@
-# 20200430 Actblue
+# 20200825 Mail voting
 
-Analysis of ActBlue filings from Minnesota
+Analysis of Minnesota primary absentee balloting
 
 ## Data
 
